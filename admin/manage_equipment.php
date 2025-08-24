@@ -82,11 +82,11 @@ $equipments = $conn->query('SELECT * FROM equipment');
   <h1>Sports Equipment Booking Portal</h1>
   <p>A platform to digitize the process of lending and booking sports equipment in colleges to reduce loss, misuse, and disputes.</p>
   <nav>
-    <a href="http://localhost/project/admin/dashboard.php">Dashboard</a>
-    <a href="http://localhost/project/admin/bulk_upload.php">Bulk Uploading</a>
-    <a href="http://localhost/project/admin/add.php">Add Equipment</a>
-    <a href="http://localhost/project/admin/manage_bookings.php">Manage Bookings</a>
-    <a href="http://localhost/project/admin/manage_equipment.php">Manage Equipment</a>
+    <a href="./dashboard.php">Dashboard</a>
+    <a href="./bulk_upload.php">Bulk Uploading</a>
+    <a href="./add.php">Add Equipment</a>
+    <a href="./manage_bookings.php">Manage Bookings</a>
+    <a href="./manage_equipment.php">Manage Equipment</a>
   </nav>
 </header>
 <div class="container">
