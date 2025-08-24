@@ -24,9 +24,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['user_role'] = $role;
             $_SESSION['register_number'] = $regnum;
         }
-        echo $_SESSION['user_id']; // Debug: check user role
         $stmt->close();
-        header('Location: ' . ($_SESSION['user_role'] === 'admin' ? 'admin/dashboard.php' : 'student/dashboard.php'));
+        if ($_SESSION['user_role'] === 'admin') {
+            header('Location: admin/dashboard.php');
+        } else {
+            header('Location: student/dashboard.php');
+        }
         exit;
     } else {
         $error = 'Invalid credentials.';
